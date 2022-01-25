@@ -72,32 +72,8 @@
 
     <!-- un po' di spazio vuoto tra le sezioni di testa e l'inizio del main -->
 
-    <!-- crerare una sorta di container per centrare  il contenuto, da qui sino alla fine della pagina è tutto margin 0 auto width da valutare -->
-    <!-- neal main abbiamo un h3 che si ripete 3 volte quindi creare una rindondaza -->
-    <!-- una check box  - h3 e la box la potrei inserire in una section singola cosi da poter gestire le tabelle a seguire in liberta-->
-
-    <!-- tre colonne  uguali tra loro, -->
-    <!-- in testa: h4 (ripetitivo nel sito) con un due p sottostanti -->
-    <!-- nel mezzo ce' una sorta di lista con list style da cambiare singolramente -->
-    <!-- bottoni (creato in precedenza) da notare come ci siano sempre un bottone ed un "simil bottone" meno  evidenziato sotto , potremmo dar ripetitività alla cosa, l'unico cambiamento è la distanza tra loro che potremmo cambiare con padding o margin bootm-->
-    <!-- piccolo border bottom solid -->
-    <!-- lista da cambiare il line hight -->
-
-    <!-- section  fine liste che prende la totalità della pagina, all'interno due div con un 80 left  -20%right? vediamo, anche qui bottone creato in precedenza  -->
-
-    <!-- section singola con due div una per l'img e una per testo + bottone occhio al colore basta dar specificità a al singolo direi 50-50% di widht -->
-
-    <!-- section con un h3 iniziale due row per le due righe  -->
-    <!-- div all'interno delle row prendono 1/3+ margine della widht ha un immagine in testa un h4 sotto ed un p questo per 6 volte -->
-
-    <!-- una section per la pubblicità ai 500 team che utilizzano dropbox nche qui un  div h3 con link sotto l'h3 -->
-
-    <!-- section con tre colonne la prima e l'ultima al suo interno hanno 4 div che prendono rispettivamente 1/4 la colonna centrale invece gli diamo un 60%-->
-    <!-- section che prende la totalità della pagina come sfondo ma il testo è sempre centrato  con un bottone simile a quello della sezione in alto (fondo bianco) -->
-
-    <!-- section foq con il div al sio interno con h4 in testa  e una lista subito dopo -->
-
     <main>
+        <!-- crerare una sorta di container per centrare  il contenuto, da qui sino alla fine della pagina è tutto margin 0 auto width da valutare -->
         <!-- trova il piano dropbox per te -->
         <div>
             <h3></h3> <!-- titolo -->
@@ -105,12 +81,14 @@
             <input type="checkbox" name="" id="">
             <input type="checkbox" name="" id="">
         </div>
-        <!-- piani -->
+
+        <!-- piani  tariffari--> 
         <section>
-            <!-- professional -->
+
+            <!-- professional  Standard e Advanced , dove tutti prendono lo stesso spazio quindi *3 -->
             <div>
                 <!-- una sorta di header all'interno della colonna con simbolo  può essere un p come una sezione tutta sua per indicare la tipologia di piano-->
-                <div></div>
+                <span></span>
 
                 <!-- titolo del piano importo e rinnovo -->
                 <div>
@@ -120,6 +98,7 @@
                 </div>
 
                 <!-- per quanti utenti spazio di archiviiazione  e  funzionalita -->
+                <!-- nelle liste aumentare il line hight -->
                 <div>
                     <ul>
                         <li></li>
@@ -133,7 +112,7 @@
                 <!-- provare a dare allo span un border bottom solid  -->
                 <span>opppure</span><a href="">acquista ora</a>
 
-                <div>
+                <div> 
                     <h5></h5>
                     <ul>
                         <li></li>
@@ -142,22 +121,123 @@
                         <li></li>
                         <li></li>
                     </ul>
+                    <!-- con un forte padding verso il bottom  -->
                 </div>
-                
             </div>
 
+            <!-- una sorta di footer con il loghino  in testa e  due colonne (80/20%)-->
+            <div>
+                <span></span>
+                <div>
+                    <h4></h4>
+                    <h5></h5>
+                    <p></p>
+                </div>
+                <div>
+                    <button></button>
+                </div>
+            </div>
+
+        </section>
+
+        <!--  pubblicità  dropbox partner -->
+        <section>
+            <!-- immagine  -->
+            <div>
+                <img src="" alt="">
+            </div>
+            <!-- testo + bottone -->
+            <div>
+                <h4></h4>
+                <p></p>
+                <button></button>
+            </div>
+        </section>
+
+        <!-- operazioni con business drop  2 righe con 6 immagini-->
+        <section>
+            <h3></h3>
+            <!-- ogni row prende 1/3 -->
+            <!-- riga top o row-->
+            <div>
+                <!-- da preparare per 6 -->
+                <div>
+                    <img src="" alt="">
+                    <h4></h4>
+                    <p></p>
+                </div>
+                <div></div>
+                <div></div>
+            </div>
+            <!-- riga bottom -->
+            <div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+
+        </section>
+
+        <!-- section per dare colore e un div per dare centralità al contenitore -->
+        <section>
+
+            <div>
+                <h3></h3>
+                <a href="">Scopri di più sui nostri clienti</a>
+            </div>
+
+        </section>
+
+        <!-- sezione partner  3 colonne aside dx e sx hanno 30% con 4 div  img dentro e quella centrale copre tutto lo spazio  -->
+        <section>
+        </section>
+
+        <!-- porta Drop nella tua azienda  con bottone a lato  -->
+        <section>
+            <div>
+                <h3></h3>
+                <button></button>
+            </div>
+        </section>
+
+        <section>
+            <!-- div container centratp -->
+            <div>
+                <h4></h4>
+                <!-- non sono convinto dello span, da rivedere -->
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </section>
 
     </main>
 
     <!-- section che prende tuttta la pagina con 5 nav ed un border bottom solo sul prim noav ed un "loghino scelta linga" sotto, magari due div 1 per i nav e uno per il loghino vediamo -->
-    <footer></footer>
+    <footer>
+        <!-- situazione identica all'header solo che i nav li ho in verticale - margini ai lati identici-->
+        <section>
+            <h5></h5>
+            <nav></nav>
+            <!-- provare a vedere se con border box bottom funziona -->
 
-    
 
+            <h5></h5>
+            <nav></nav>
 
+            <h5></h5>
+            <nav></nav>
 
+            <h5></h5>
+            <nav></nav>
 
+            <h5></h5>
+            <nav></nav>
+        </section>
 
+        <!-- da capire come mettere il loghino italiano con freccia e mondo -->
+
+    </footer>
 </body>
 </html>
