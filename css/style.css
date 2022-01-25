@@ -1,0 +1,22 @@
+
+/* reset */
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/* dare spessore ai contenitore ad altezza 0 */
+.clearfix:after{
+    content:"";
+    clear: both;
+    display:table;
+}
+
+/* impilare glli oggetti a dx o sx */
+.float-left{
+    float: left;
+}
+.float-right{
+    float: right;
+}
