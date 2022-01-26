@@ -161,7 +161,7 @@ div.checkbox label{
 
 /*  comando provvisorio per il magin botton container */
 .mg-bottom{
-    margin-bottom: 30px;
+    margin-bottom: 3em;
 }
 
 /* ! STRUTTUTA COLONNE  */
@@ -266,6 +266,14 @@ div.contact{
 
 /* SEZIONE ADVISOR */
 
+section div.advisor-sx,
+section div.advisor-dx{
+    margin-bottom: 3em;
+}
+
+
+
+
 section div.advisor-sx{
     width: 60%;
 }
@@ -280,11 +288,50 @@ section div.advisor-sx img{
     width: 95%;
 }
 
-section div.advisor-dx button.button{
+section div.advisor-dx button.button,
+section div.info-dx button{
     color:rgba(59,59,58,255);
     background-color: white;
     border: 1px solid rgba(59,59,58,255) ;
 }
 
 
-/* SEZIONE CARD IN ROW */
+/* SEZIONE CARD IN ROW */ /* !prova a dare ai container un margin bottom 30px così da togliere quel provvisorio */
+section div.row{
+    width: 100%;
+/*     background-color: aquamarine; */
+}
+
+div.card-aside img,
+div.card-central img{
+    width: 100%;
+    object-fit: contain;
+    margin-bottom: 2em;
+}
+
+section div.card-aside,
+section div.card-central{
+    width: calc((100% / 3) - 2em);
+    margin-bottom: 3em;
+}
+
+section div.card-central{
+    margin: 0 3em;
+}
+
+section div.info-sx{
+    width: 70%;
+
+}
+
+section div.info-dx{
+    width: 30%;
+    padding-top: 1em;
+    padding-left: 3em;
+}
+
+.box-bg-azzurrino{
+    background-color: rgba(181,209,231,255);
+    height: 300px;
+    padding-top: 5em;
+}
