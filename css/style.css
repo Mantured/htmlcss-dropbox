@@ -24,6 +24,11 @@ h4{
     margin-bottom: 20px;
 }
 
+h5{
+    font-size: 1em;
+    font-weight: 700;
+}
+
 .inline-block{
     display: inline-block
 } 
@@ -160,7 +165,7 @@ div.checkbox label{
 
 div.col{
     width: calc(100% / 3);
-    height: 800px;
+    height: 950px;
     border: 1px solid rgba(230,232,234,255);
 }
 
@@ -168,9 +173,14 @@ div.main-col{
     padding: 1.5em;
 }
 
-/* div.content{
-    padding: 1.5em;
-} */
+div.price{
+    margin-bottom:1.5em;
+} 
+
+div.price p:nth-child(3){
+    color: rgba(148,158,168,255);
+}
+
 
 div.head-col{
     text-align: center;
@@ -184,4 +194,38 @@ div.head-col i{
 
 div.main-col p{
     line-height: 30px;
+}
+
+div.service-top ul.fa-ul,
+div.service-bottom ul.fa-ul{
+    margin-left:0;
+    padding-left:1.5em;
+}
+
+div.service-top ul li,
+div.service-bottom ul li{
+    font-size: 0.8em;
+    line-height: 2em;
+    margin-bottom: 1em;
+}
+
+div.main-col p > span{
+    border-bottom: 1px solid rgba(230,232,234,255);
+    padding-bottom: 2em;
+}
+
+div.main-col button{
+    margin: 2em 0;
+}
+
+div.service-middle{
+    margin-bottom: 3.5em;
+}
+
+div.service-bottom h5{
+    margin-bottom: 1.5em;
+}
+
+div.service-bottom ul.fa-ul li span.fa-li{
+    color:rgba(3,99,255,255);
 }
