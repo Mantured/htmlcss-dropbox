@@ -335,3 +335,42 @@ section div.info-dx{
     height: 300px;
     padding-top: 5em;
 }
+
+section.box-bottom{
+    background-color: blueviolet;
+    width: 100%;
+    height: 500px;
+}
+
+section div.column-aside{
+    width: 30%;
+    height: 100%;
+    background-color:aqua;
+}
+
+section div.column{
+    width: 40%;
+    height: 100%;
+    background-color: coral;
+}
+
+section div div.box-small{
+    width:50%;
+    height: 50%;
+}
+
+section div div.bg-brown{
+    background-color: brown;
+}
+
+section div div.bg-fuxia{
+    background-color: fuchsia;
+}
+
+section div div.bg-ciano{
+    background-color:cyan;
+}
+
+section div div.bg-blue{
+    background-color:blue;
+}
