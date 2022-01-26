@@ -69,7 +69,7 @@ section.container-top{
 
 section.container-nav,
 section.container-jumbo{
-    width:calc(80% - 2rem);
+    width:80%;
     min-width: 800px;
     max-width: 1180px;
     margin:0 auto;
@@ -163,10 +163,20 @@ div.checkbox label{
     margin-bottom: 30px;
 }
 
-div.col{
-    width: calc(100% / 3);
+/* ! STRUTTUTA COLONNE  */
+div.column-sx,
+div.column-dx{
+    width:calc(35% - 3em);
     height: 950px;
     border: 1px solid rgba(230,232,234,255);
+
+}
+
+div.column-central{
+    width:calc(35% - 3em);
+    height: 950px;
+    border: 1px solid rgba(230,232,234,255);
+    margin:0 1.5em;
 }
 
 div.main-col{
