@@ -76,7 +76,7 @@ section.container-jumbo{
 }
 
 section.container{
-    width:calc(60%);
+    width:60%;
     min-width: 800px;
     max-width: 1180px;
     margin:0 auto;
@@ -165,18 +165,22 @@ div.checkbox label{
 
 /* ! STRUTTUTA COLONNE  */
 div.column-sx,
-div.column-dx{
-    width:calc(35% - 3em);
+div.column-dx,
+div.column-central{
+    width: calc((100% /3) - 2em);
     height: 950px;
     border: 1px solid rgba(230,232,234,255);
-
+    margin-bottom: 60px;
 }
 
 div.column-central{
-    width:calc(35% - 3em);
-    height: 950px;
+    margin:0 3em;
+} 
+
+div.column-expanse{
+    width: 100%; /* centrato al PIXEL */
+    height: 250px;
     border: 1px solid rgba(230,232,234,255);
-    margin:0 1.5em;
 }
 
 div.main-col{
@@ -238,4 +242,21 @@ div.service-bottom h5{
 
 div.service-bottom ul.fa-ul li span.fa-li{
     color:rgba(3,99,255,255);
+}
+
+div.enterprise,
+div.contact{
+    padding:1.5em;
+}
+
+div.enterprise h5{
+    margin-bottom: 1.1em;
+}
+
+div.enterprise{
+    width: 70%;
+}
+
+div.contact{
+    width: 30%;
 }
