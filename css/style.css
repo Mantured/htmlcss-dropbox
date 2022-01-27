@@ -546,3 +546,12 @@ div.container-nav-bottom span i:nth-child(2){
 #drop-link:hover #menu-support {
     display: block;
 }
+
+
+/* Posso inserirle l'id nel container Headerma preferisco tenerlo qui per fare altre prove con le atre proprietà */
+#menu-fisso{
+    position:fixed;
+    width: 100%;
+    background-color: white;
+    z-index: 1;
+}
