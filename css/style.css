@@ -568,3 +568,18 @@ section#jumbotron h1{
 section#jumbotron img{
     width: 100%;
 }
+
+
+/* !test faq a scomparsa */
+
+div.faq-box p{
+    display: none;
+}
+
+div.faq-box h5:hover ~ p{
+    display:block;
+}
+
+/* si vedono entrambi quando vado a hoverare il primo h5 perchè probabilmente hanno bisogno di un div o un id, da approffondire */
+
+
