@@ -264,7 +264,7 @@ div.contact{
 }
 /* !FINE SEZIONE COLONNE */
 
-/* SEZIONE ADVISOR */
+/* *SEZIONE ADVISOR */
 
 section div.advisor-sx,
 section div.advisor-dx{
@@ -359,18 +359,46 @@ section div div.box-small{
     height: 50%;
 }
 
+section div div img{
+    width: 60%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+    filter: invert(1);
+}
+
+section div div.bg-green{
+    background-color: rgba(162,211,155,255);
+    border: 0.7em solid  rgba(208,233,205,255);
+}
+
 section div div.bg-brown{
-    background-color: brown;
+    background-color: rgba(97,9,42,255);
 }
 
-section div div.bg-fuxia{
-    background-color: fuchsia;
+section div div.bg-lightblue{
+    background-color: rgba(0,146,207,255);
 }
 
-section div div.bg-ciano{
-    background-color:cyan;
+section div div.bg-red{
+    background-color:rgba(254,29,28,255);
+}
+
+section div div.bg-hardred{
+    background-color: rgba(212,1,31,255);
+}
+
+section div div.bg-lightgrey{
+    background-color: rgba(181,208,230,255);
 }
 
 section div div.bg-blue{
-    background-color:blue;
+    background-color: rgba(13,36,129,255);
 }
+
+section div div.bg-yellow{
+    background-color: rgba(255,217,49,255);
+}
+
+
