@@ -28,41 +28,44 @@
     <!-- posso anche non dare una section che racchiuda, per ora la do al massimo la tolgo -->
 
     <header>
-        <section class="container-top clearfix" id="menu-fisso">
+        <section class="container-top clearfix">
             <!-- logo -->
-            <div class="head-dx float-left">
-                <img  src="img/logo-small.png" alt="">
+            <div id="menu-fixed">
+                <div class="head-dx float-left">
+                    <img  src="img/logo-small.png" alt="">
+                </div>
+                
+                <!-- div container  nav-->
+                <section class= "container-nav inline-block clearfix">
+                    <!-- nav float left o float left con spazio al centro valutiamo -->
+                    <nav class="top-nav float-left">
+                        <ul>
+                            <li><a href="">Perchè Dropbox</a></li>
+                            <li><a href="">Funzioni</a></li>
+                            <li><a href="">Piani e prezzi</a></li>
+                        </ul>
+                    </nav>
+                    <!-- nav float right  -->
+                    <nav class="top-nav float-right">
+                        <ul id="support">
+                            <li id="drop-link">
+                                <a href="#">Supporto</a>
+                                <ul id="menu-support">
+                                    <li><a href=""></a>Centro assistenza</li>
+                                    <li><a href=""></a>Forum della community</li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Contatta l'ufficio vendite</a></li>
+                            <li><a href="#">Accedi</a></li>
+                        </ul>
+                    </nav>
+                </section>
+                <!-- botton "inizia" -->
+                <div class="head-sx float-right">
+                    <button class="button">Inizia</button>
+                </div>
             </div>
-            
-            <!-- div container  nav-->
-            <section class= "container-nav inline-block clearfix">
-                <!-- nav float left o float left con spazio al centro valutiamo -->
-                <nav class="top-nav float-left">
-                    <ul>
-                        <li><a href="">Perchè Dropbox</a></li>
-                        <li><a href="">Funzioni</a></li>
-                        <li><a href="">Piani e prezzi</a></li>
-                    </ul>
-                </nav>
-                <!-- nav float right  -->
-                <nav class="top-nav float-right">
-                    <ul id="support">
-                        <li id="drop-link">
-                            <a href="#">Supporto</a>
-                            <ul id="menu-support">
-                                <li><a href=""></a>Centro assistenza</li>
-                                <li><a href=""></a>Forum della community</li>
-                            </ul>
-                        </li>
-                        <li><a href="#">Contatta l'ufficio vendite</a></li>
-                        <li><a href="#">Accedi</a></li>
-                    </ul>
-                </nav>
-            </section>
-            <!-- botton "inizia" -->
-            <div class="head-sx float-right">
-                <button class="button">Inizia</button>
-            </div>
+
         </section>
     </header>
     <!-- una section che mi vada a racchiudere il jumbotron con un h1 - un paragrafo o subtitle e due bottoni (da rendere ripetitivi perchè sono uguali nel resto della pagina come stile)  il tutto con un immagine affianco-->
