@@ -134,6 +134,8 @@ nav.top-nav ul li:hover{
 }
 
 
+
+
 div.aside-dx{
     width: 30%;
     height: 100%;
@@ -495,9 +497,6 @@ div.nav-aside nav ul li{
     list-style-type: none;
 }
 
-.lang{
-
-}
 
 div.container-nav-bottom span{
     position: absolute;
@@ -513,4 +512,37 @@ div.container-nav-bottom span i{
 
 div.container-nav-bottom span i:nth-child(2){
     vertical-align: bottom;
+}
+
+/* !EFFETTO OVER NEL LINK IN HEADER */
+
+#support{
+    position: relative;
+    display: inline-block;
+}
+
+#drop-link{
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+#menu-support{
+    display: none;
+    position: absolute;
+    background-color: whitesmoke;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+#menu-support a{
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+#drop-link:hover #menu-support {
+    display: block;
 }
