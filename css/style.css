@@ -92,7 +92,7 @@ div.head-sx{
     text-align: center;
 }
 
-/* *sezioni di controllo */
+/* *sezioni di controllo nav */
 div.head-dx, 
 div.head-sx{
     width:10%;
@@ -128,6 +128,8 @@ nav.top-nav ul li:hover{
     color: whitesmoke;
     transition-duration: 0.4s;
 }
+
+/* hover generico per tutti i bottoni */
 
 .button:hover{
     filter: drop-shadow(1px 3px 5px blue);
@@ -274,30 +276,27 @@ div.contact{
 
 /* *SEZIONE ADVISOR */
 
-section div.advisor-sx,
-section div.advisor-dx{
+div.advisor-sx,
+div.advisor-dx{
     margin-bottom: 3em;
 }
 
-
-
-
-section div.advisor-sx{
+div.advisor-sx{
     width: 60%;
 }
 
-section div.advisor-dx{
+div.advisor-dx{
     width: 40%;
     padding-left: 2em;
     padding-top: 2em;
 }
 
-section div.advisor-sx img{
+div.advisor-sx img{
     width: 95%;
 }
 
-section div.advisor-dx button.button,
-section div.info-dx button{
+div.advisor-dx button.button,
+div.info-dx button{
     color:rgba(59,59,58,255);
     background-color: white;
     border: 1px solid rgba(59,59,58,255) ;
@@ -305,7 +304,7 @@ section div.info-dx button{
 
 
 /* SEZIONE CARD IN ROW */ /* !prova a dare ai container un margin bottom 30px così da togliere quel provvisorio */
-section div.row{
+div.row{
     width: 100%;
 /*     background-color: aquamarine; */
 }
@@ -317,28 +316,32 @@ div.card-central img{
     margin-bottom: 2em;
 }
 
-section div.card-aside,
-section div.card-central{
+div.card-aside,
+div.card-central{
     width: calc((100% / 3) - 2em);
     margin-bottom: 3em;
 }
 
-section div.card-central{
+div.card-central{
     margin: 0 3em;
 }
 
-section div.info-sx{
+div.info-sx{
     width: 70%;
-
 }
 
-section div.info-dx{
+/* amo i selettori */
+div.info-sx h3:only-child{
+    color: rgba(97,9,42,255)
+}
+
+div.info-dx{
     width: 30%;
     padding-top: 1em;
     padding-left: 3em;
 }
 
-.box-bg-azzurrino{
+section.box-bg-azzurrino{
     background-color: rgba(181,209,231,255);
     height: 300px;
     padding-top: 5em;
@@ -350,13 +353,13 @@ section.box-bottom{
     height: 50vh;
 }
 
-section div.column-aside{
+div.column-aside{
     width: 30vw;
     height: 50vh;
     background-color:aqua;
 }
 
-section div.column{
+div.column{
     width: 40vw;
     height: 50vh;
     background-color: rgba(244,244,245,255);
@@ -364,12 +367,12 @@ section div.column{
     overflow: scroll;
 }
 
-section div div.box-small{
+div.box-small{
     width:50%;
     height: 50%;
 }
 
-section div.column-aside div img{
+div.column-aside div img{
     width: 60%;
     position: absolute;
     left: 50%;
@@ -390,7 +393,7 @@ section div.column img{
     top: 3em;
     left: 3em; */
 
-section div div.review{
+div.review{
     line-height: 4em;
     font-size: 1.3em;
 }
@@ -399,39 +402,41 @@ section div div.review p:first-child{
     margin-bottom: 4em;
 }
 
+
+
 /* *Gesione colori svg  */
 
 
-section div div.bg-green{
+div.bg-green{
     background-color: rgba(162,211,155,255);
     border: 0.7em solid  rgba(208,233,205,255);
 }
 
-section div div.bg-brown{
+div.bg-brown{
     background-color: rgba(97,9,42,255);
 }
 
-section div div.bg-lightblue{
+div.bg-lightblue{
     background-color: rgba(0,146,207,255);
 }
 
-section div div.bg-red{
+div.bg-red{
     background-color:rgba(254,29,28,255);
 }
 
-section div div.bg-hardred{
+div.bg-hardred{
     background-color: rgba(212,1,31,255);
 }
 
-section div div.bg-lightgrey{
+div.bg-lightgrey{
     background-color: rgba(181,208,230,255);
 }
 
-section div div.bg-blue{
+div.bg-blue{
     background-color: rgba(13,36,129,255);
 }
 
-section div div.bg-yellow{
+div.bg-yellow{
     background-color: rgba(255,217,49,255);
 }
 
@@ -497,6 +502,9 @@ div.container-nav-bottom span{
     border-top: 1px solid whitesmoke;
 }
 
+/* posso gestire il logo sia con float cehe con position, preferisco float per la flessibilità/precisione
+con float cambiava solo che dovevo dargli un altezza  */
+
 div.container-nav-bottom span i{
     padding:3px;
 }
@@ -510,12 +518,14 @@ div.container-nav-bottom span i:nth-child(2){
 #support{
     position: relative;
     display: inline-block;
+
 }
 
 #drop-link{
     padding: 16px;
     font-size: 16px;
     border: none;
+
 }
 
 #menu-support{
@@ -523,7 +533,7 @@ div.container-nav-bottom span i:nth-child(2){
     position: absolute;
     background-color: whitesmoke;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+
 }
 
 #menu-support a{
@@ -531,23 +541,24 @@ div.container-nav-bottom span i:nth-child(2){
     position: absolute;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+
 }
 
 #drop-link:hover #menu-support {
     display: block;
+    background-color: whitesmoke;
+
 }
 
-
-/* Posso inserirle l'id nel container Headerma preferisco tenerlo qui per fare altre prove con le atre proprietà */
-#menu-fixed{
-    overflow: hidden;
+/* Posso inserirle l'id nel container Header ma preferisco tenerlo qui per fare altre prove con le atre proprietà */
+div#menu-fixed{
     background-color: white;
     width: 100%;
     position: fixed;
     height: 80px;
-    z-index: 2;
+    z-index: 1; 
 }
+
 
 section#jumbotron h1{
     font-size: 4.1em;
