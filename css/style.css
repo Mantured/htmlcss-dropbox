@@ -339,18 +339,18 @@ section div.info-dx{
 section.box-bottom{
     background-color: blueviolet;
     width: 100%;
-    height: 500px;
+    height: 50vh;
 }
 
 section div.column-aside{
-    width: 30%;
-    height: 100%;
+    width: 30vw;
+    height: 50vh;
     background-color:aqua;
 }
 
 section div.column{
-    width: 40%;
-    height: 100%;
+    width: 40vw;
+    height: 50vh;
     background-color: coral;
 }
 
