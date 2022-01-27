@@ -391,6 +391,9 @@ section div div.review p:first-child{
     margin-bottom: 4em;
 }
 
+/* *Gesione colori svg  */
+
+
 section div div.bg-green{
     background-color: rgba(162,211,155,255);
     border: 0.7em solid  rgba(208,233,205,255);
@@ -425,3 +428,21 @@ section div div.bg-yellow{
 }
 
 
+div.faq-box{
+    padding: 3em 0;
+}
+
+div.faq-box h5,
+div.faq-box h4{
+    border-bottom: 1px solid rgba(230,232,234,255);
+    line-height: 30px;
+    padding-bottom:  2em;
+    position: relative;
+}
+
+div.faq-box h5 > i{
+    position: absolute;
+    right: 30px;
+    top: 15px;
+    transform: translateY(-7px);
+}
