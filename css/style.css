@@ -351,7 +351,9 @@ section div.column-aside{
 section div.column{
     width: 40vw;
     height: 50vh;
-    background-color: coral;
+    background-color: rgba(244,244,245,255);
+    padding: 3em;
+    overflow: scroll;
 }
 
 section div div.box-small{
@@ -359,13 +361,34 @@ section div div.box-small{
     height: 50%;
 }
 
-section div div img{
+section div.column-aside div img{
     width: 60%;
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50% , -50%);
     filter: invert(1);
+}
+
+section div.column img{
+    width: 30%;
+    float: left;
+    margin-bottom: 4em;
+}
+
+
+/* Possiamo utilizzare sia il position che il float, in uqesto caso per velocizzare, usiamo il float */
+/*     position: absolute;
+    top: 3em;
+    left: 3em; */
+
+section div div.review{
+    line-height: 4em;
+    font-size: 1.3em;
+}
+
+section div div.review p:first-child{
+    margin-bottom: 4em;
 }
 
 section div div.bg-green{
