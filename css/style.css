@@ -84,8 +84,10 @@ section.container{
     margin:0 auto;
 }
 
-section.container-top .head-dx img, 
-section.container-top .head-sx{
+/* HEADER */
+
+div.head-dx img, 
+div.head-sx{
     vertical-align: middle;
     text-align: center;
 }
@@ -105,6 +107,14 @@ nav.top-nav ul li{
 nav.top-nav ul li a{
     text-decoration: none;
     color: black;
+
+}
+
+nav.top-nav ul li:hover{
+    text-decoration: solid;
+    text-decoration-color:black;
+    border-bottom: 2px solid black;
+    padding-bottom:30px;
 }
 
 /* classe generica per i button futuri */
@@ -116,6 +126,11 @@ nav.top-nav ul li a{
     border: none;
     background-color: rgba(0,96,254,255);
     color: whitesmoke;
+    transition-duration: 0.4s;
+}
+
+.button:hover{
+    filter: drop-shadow(1px 3px 5px blue);
 }
 
 
@@ -162,7 +177,7 @@ div.checkbox label{
 /*  comando provvisorio per il magin botton container */
 .mg-bottom{
     margin-bottom: 3em;
-}
+} 
 
 /* ! STRUTTUTA COLONNE  */
 div.column-sx,
@@ -499,10 +514,3 @@ div.container-nav-bottom span i{
 div.container-nav-bottom span i:nth-child(2){
     vertical-align: bottom;
 }
-
-/* div.container-nav-bottom span i{
-    width: 10%;
-    height: 10%;
-    padding: 3em 2em 0 0;
-    border-top: 1px solid whitesmoke;
-} */
